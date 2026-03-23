@@ -1,0 +1,7 @@
+from src.api.time_entries.default import TimeEntryDefault
+from src.db.models import Task
+from typing import Optional
+
+
+class TimeEntryInner(TimeEntryDefault):
+    task: Optional[Task] = None
